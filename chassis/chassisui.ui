@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>chassisUI</class>
+ <widget class="QWidget" name="chassisUI">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="leftBtnWidget" native="true">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>100</y>
+     <width>85</width>
+     <height>530</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <layout class="QVBoxLayout" name="leftBtnlayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetDefaultConstraint</enum>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="TaskBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_rw_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_rw_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_rw_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="AutoBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_zzjs_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_zzjs_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_zzjs_s.png)}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="RemoteBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_ykjs_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_ykjs_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_ykjs_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="DisableBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/new/src/icon/vm/dashboard/SetWndBtns/btn_qsn_n.png)}QPushButton:pressed {border-image:url(:/new/src/icon/vm/dashboard/SetWndBtns/btn_qsn_p.png)}QPushButton:checked {border-image:url(:/new/src/icon/vm/dashboard/SetWndBtns/btn_qsn_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="RCSResetBtn">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/new/src/icon/vm/dashboard/SetWndBtns/btn_rcsfw_n.png)}QPushButton:pressed {border-image:url(:/new/src/icon/vm/dashboard/SetWndBtns/btn_rcsfw_p.png)}QPushButton:checked {border-image:url(:/new/src/icon/vm/dashboard/SetWndBtns/btn_rcsfw_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="MoreBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_gd_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_gd_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/Pinhole/btn_fh_n.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="rightBtnWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1190</x>
+     <y>100</y>
+     <width>85</width>
+     <height>350</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="rightBtnlayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="MonitorBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_jjjs_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_jjjs_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_jjjs_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="MessageBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_xx_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_xx_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_xx_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="MultiBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_dmxj_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_dmxj_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_dmxj_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="PinholeBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_zkxj_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_zkxj_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/Right/btn_zkxj_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="middleWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>585</y>
+     <width>370</width>
+     <height>115</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="middleBtnWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>35</y>
+      <width>370</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="setBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_sz_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_sz_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_sz_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="changeloadBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_zhqh_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_zhqh_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_zhqh_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="tailgateBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_wmkz_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_wmkz_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_wmkz_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="postureBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_czkz_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_czkz_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/btn_czkz_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="middleTittleLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>370</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>更多</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="changeloadWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>585</y>
+     <width>185</width>
+     <height>115</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="chageloadBtnWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>35</y>
+      <width>185</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="pedrailBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Load/btn_xld_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Load/btn_xld_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Load/btn_xld_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="UAVBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Load/btn_wrj_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Load/btn_wrj_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Load/btn_wrj_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="changeloadTittleLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>185</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>更多&gt;载荷切换</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="tailgateWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>585</y>
+     <width>560</width>
+     <height>115</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="tailgateBtnWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>35</y>
+      <width>560</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="manualLockBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_sj_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_sj_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_sj_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">manualLockBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="manualStop1Btn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_tz_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_tz_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_tz_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">manualLockBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="manualUnlockBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_js_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_js_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_js_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">manualLockBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="manualReleaseBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_fx_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/AutoCtrl/btn_fx_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/AutoCtrl/btn_fx_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">manualreleaseBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="manualStop2Bnt">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_sftz_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_sftz_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_sftz_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">manualreleaseBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="manualwithdrawBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_sh_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_sh_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/Tailgate/ManualCtrl/btn_sh_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">manualreleaseBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="tailgateTittlelabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>560</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>更多&gt;尾门控制</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="postureWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>585</y>
+     <width>655</width>
+     <height>115</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="postureBtnWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>35</y>
+      <width>655</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="CZKZ_CZSNBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_cztj_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_cztj_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_cztj_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="CZKZ_DDBtn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_dd_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_dd_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_dd_s.png)}/*QPushButton:disabled {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_dd_s.png)}*/</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">postureBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="CZKZ_ZXZXBtn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_zxzx_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_zxzx_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_zxzx_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">postureBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="CZKZ_PDPBtn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_pdp_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_pdp_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_pdp_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">postureBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="CZKZ_YHGBtn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_yhg_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_yhg_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_yhg_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">postureBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="CZKZ_PCZQBtn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_pczq_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_pczq_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_pczq_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">postureBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="CZKZ_TZBtn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_gb_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_gb_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/More/tscz/btn_gb_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+       <attribute name="buttonGroup">
+        <string notr="true">postureBtnGroup</string>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="postureTittleLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>655</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>更多&gt;车姿控制</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="chassisDisableWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>720</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="chassisDisableBtnWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>100</y>
+      <width>85</width>
+      <height>170</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="enableBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/btn_sn_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/btn_sn_p.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="disconnectBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/new/src/icon/vm/dashboard/buttons/first/btn_dklj_n.png)}QPushButton:pressed {border-image:url(:/new/src/icon/vm/dashboard/buttons/first/btn_dklj_p.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="remoteBtnWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>100</y>
+      <width>85</width>
+      <height>530</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="Remote_gearsBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/popwindows/btn_dwkz_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/popwindows/btn_dwkz_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/popwindows/btn_dwkz_s.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Remote_stopBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/popwindows/btn_zz_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/popwindows/btn_zz_p.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>40</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="Remote_moreBtn">
+       <property name="minimumSize">
+        <size>
+         <width>85</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_gd_n.png)}QPushButton:pressed {border-image:url(:/icon/vm/dashboard/buttons/newButton/Left/btn_gd_p.png)}QPushButton:checked {border-image:url(:/icon/vm/dashboard/buttons/newButton/Pinhole/btn_fh_n.png)}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="checkable">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <zorder>chassisDisableWidget</zorder>
+  <zorder>leftBtnWidget</zorder>
+  <zorder>rightBtnWidget</zorder>
+  <zorder>changeloadWidget</zorder>
+  <zorder>middleWidget</zorder>
+  <zorder>postureWidget</zorder>
+  <zorder>tailgateWidget</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="manualreleaseBtnGroup"/>
+  <buttongroup name="postureBtnGroup"/>
+  <buttongroup name="manualLockBtnGroup"/>
+ </buttongroups>
+</ui>

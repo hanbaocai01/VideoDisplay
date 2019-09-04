@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AutoDriveUI</class>
+ <widget class="QWidget" name="AutoDriveUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="leftBtnWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>100</y>
+     <width>85</width>
+     <height>440</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="leftBtnLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="plottingBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/gis/MapSideIcon/btn_dtbh_n.png)}QPushButton:pressed {border-image:url(:/icon/gis/MapSideIcon/btn_dtbh_p.png)}QPushButton:checked {border-image:url(:/icon/gis/MapSideIcon/btn_dtbh_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="globalBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/gis/MapSideIcon/btn_qjgh_n.png)}QPushButton:pressed {border-image:url(:/icon/gis/MapSideIcon/btn_qjgh_p.png)}QPushButton:checked {border-image:url(:/icon/gis/MapSideIcon/btn_qjgh_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="MoreBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/gis/MapSideIcon/btn_dtgd_n.png)}QPushButton:pressed {border-image:url(:/icon/gis/MapSideIcon/btn_dtgd_p.png)}QPushButton:checked {border-image:url(:/icon/gis/MapSideIcon/btn_dtgd_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="TaskBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/gis/MapSideIcon/btn_rw_n.png)}QPushButton:pressed {border-image:url(:/icon/gis/MapSideIcon/btn_rw_p.png)}QPushButton:checked {border-image:url(:/icon/gis/MapSideIcon/btn_rw_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exitBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/gis/task/btn_tc_n.png)}QPushButton:pressed {border-image:url(:/icon/gis/task/btn_tc_p.png)}QPushButton:checked {border-image:url(:/icon/gis/task/btn_tc_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="rightBtnWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>1190</x>
+     <y>100</y>
+     <width>85</width>
+     <height>260</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="rightBtnLayout">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="magnifyBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/gis/MapSideIcon/btn_dtfd_n.png)}QPushButton:pressed {border-image:url(:/icon/gis/MapSideIcon/btn_dtfd_p.png)}QPushButton:checked {border-image:url(:/icon/gis/MapSideIcon/btn_dtfd_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="shrinkBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/gis/MapSideIcon/btn_dtsxxs_n.png)}QPushButton:pressed {border-image:url(:/icon/gis/MapSideIcon/btn_dtsxxs_p.png)}QPushButton:checked {border-image:url(:/icon/gis/MapSideIcon/btn_dtsxxs_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="locationBtn">
+      <property name="minimumSize">
+       <size>
+        <width>85</width>
+        <height>80</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {border-image:url(:/icon/gis/MapSideIcon/btn_dtwdwz_n.png)}QPushButton:pressed {border-image:url(:/icon/gis/MapSideIcon/btn_dtwdwz_p.png)}QPushButton:checked {border-image:url(:/icon/gis/MapSideIcon/btn_dtwdwz_s.png)}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
